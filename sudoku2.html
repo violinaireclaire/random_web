@@ -12,13 +12,20 @@
 	body {background-color: #E0FFFF}
 	input{width:3em;}
 
-	button {width: 8em; height: 4em;}
+	p.bluelink { padding: 1em 2em 1em 2em;
+	background-color:#008CBA; color:white;
+		width: 150px; }
+	p.bluelink a:hover { background-color:white; color: #008CBA;
+		text-decoration: none; } 
+		
+	.boxed {
+	   border: 1px solid black ;
+			width:200px;}
 	</style>
 
 	<body>
 	<center>
 	<h1>Sudoku Solver</h1>
-	<h2>HARD!!!</h2>
 	<table>
 	  <caption>Input Numbers</caption>
 	  <colgroup><col><col><col>
@@ -129,9 +136,9 @@
 	   </table>
 	</center>
 
-	<div style="padding-top: 30px;">
-	<button type="button">SUBMIT</button>
-	</div>
+	<p class="bluelink">
+	<a href='index.html'>SUBMIT</a>
+	</p>
 
 	</body>
 </html>
