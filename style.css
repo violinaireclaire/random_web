@@ -1,4 +1,6 @@
-body {text-align: center;}
+body {text-align: center;
+}
+
 @cell-size: 50px;
 .sudoku {
   margin: 70px auto;  
