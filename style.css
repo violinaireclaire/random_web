@@ -1,6 +1,6 @@
 body {text-align: center;
 }
-
+h1 {color: #5EFB6E;}
 @cell-size: 50px;
 .sudoku {
   margin: 70px auto;  
