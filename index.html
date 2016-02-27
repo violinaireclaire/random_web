@@ -7,17 +7,32 @@
 	</head>
 	<style>
 	table { border-collapse: collapse; font-family: Calibri, sans-serif;background-color: white;}
-	colgroup, tbody { border: solid medium; }
+	colgroup, tbody{ border: solid medium; }
 	td { border: solid thin; height: 4em; width: 4em; text-align: center; padding: 0; }
 	body {background-color: #E0FFFF}
 	input{width:3em;}
+
+	p.bluelink { padding: 1em 2em 1em 2em;
+	background-color:#008CBA; color:white;
+		width: 150px; }
+	p.bluelink a:hover { background-color:white; color: #008CBA;
+		text-decoration: none; } 
+		
+	.boxed {
+	   border: 1px solid black ;
+			width:200px;}
 	</style>
 
 	<body>
 	<center>
 	<h1>Sudoku Solver</h1>
 	<table>
-	   	</tr>
+	  <caption>Input Numbers</caption>
+	  <colgroup><col><col><col>
+	  <colgroup><col><col><col>
+	  <colgroup><col><col><col>
+	  <tbody>
+	   <tr>
 	   <td><input/></td> 
 	   <td><input/> </td>
 	   <td> <input/></td>
@@ -118,8 +133,12 @@
 	   <td> <input/></td>
 	   <td><input/></td>
 	   	</tr>
-	</table>
+	   </table>
 	</center>
+
+	<p class="bluelink">
+	<a href='index.html'>SUBMIT</a>
+	</p>
 
 	</body>
 </html>

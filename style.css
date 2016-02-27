@@ -1,6 +1,5 @@
 body {text-align: center;
 }
-h1 {color: #5EFB6E;}
 @cell-size: 50px;
 .sudoku {
   margin: 70px auto;  
@@ -38,3 +37,15 @@ h1 {color: #5EFB6E;}
           height: @cell-size;
           text-align: center;          
         }
+
+p {line-height: 1.6em; 
+  vertical-align: middle;}
+
+p span { background-color: white; color: #008CBA;
+      font-weight: bold; font-size: 1.3em;
+      padding: 0.2em 1em; border: 2px dotted white; }
+      
+p.links { font-size: 1em; text-align: center; }
+
+a { font-weight: bold; }
+a:hover { background-color: white;color:#008CBA; }
