@@ -1,6 +1,6 @@
 <html>
 	<head>
-	<title>Sudoku</title>
+	<title>Sudoku - Easy</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
@@ -9,23 +9,15 @@
 	table { border-collapse: collapse; font-family: Calibri, sans-serif;background-color: white;}
 	colgroup, tbody{ border: solid medium; }
 	td { border: solid thin; height: 4em; width: 4em; text-align: center; padding: 0; }
-	body {background-color: #E0FFFF}
+	body {background-color: #BA86FC}
 	input{width:3em;}
 
-	p.bluelink { padding: 1em 2em 1em 2em;
-	background-color:#008CBA; color:white;
-		width: 150px; }
-	p.bluelink a:hover { background-color:white; color: #008CBA;
-		text-decoration: none; } 
-		
-	.boxed {
-	   border: 1px solid black ;
-			width:200px;}
+	button {width:8em; height:4em;}
 	</style>
 
 	<body>
 	<center>
-	<h1>Sudoku Solver</h1>
+	<h1>Sudoku - Easy</h1>
 	<table>
 	  <caption>Input Numbers</caption>
 	  <colgroup><col><col><col>
@@ -34,111 +26,111 @@
 	  <tbody>
 	   <tr>
 	   <td><input/></td> 
-	   <td><input/> </td>
+	   <td>2</td>
 	   <td> <input/></td>
+	   <td>1</td>
+	   <td>7</td>
 	   <td>8</td>
 	   <td> <input/></td>
-	   <td>7</td>
-	   <td> <input/></td>
-	   <td> <input/></td>
+	   <td>3</td>
 	   <td><input/></td>
 	   </tr>
 	   <tr> 
-	   <td>7</td>
 	   <td><input/></td>
-	   <td>8</td>
+	   <td>4</td>
 	   <td><input/></td>
 	   <td>3</td>
 	   <td><input/></td>
-	   <td>6</td>
-	   <td> <input/></td>
-	   <td>4</td>
-	   </tr>
-	   <tr> 
-	   <td><input/></td>
 	   <td>2</td>
-	   <td> <input/></td>
 	   <td><input/></td>
-	   <td> <input/></td>
-	   <td><input/></td>
-	   <td> <input/></td>
 	   <td>9</td>
 	   <td><input/></td>
+	   </tr>
+	   <tr> 
+	   <td>1</td>
+	   <td><input/></td>
+	   <td> <input/></td>
+	   <td><input/></td>
+	   <td> <input/></td>
+	   <td><input/></td>
+	   <td> <input/></td>
+	   <td><input/></td>
+	   <td>6</td>
 	   	</tr>
 	   	<tbody>
 	   	<tr>
-	   <td>9</td> 
+	   <td><input/></td> 
 	   <td><input/> </td>
+	   <td>8</td>
+	   <td>6</td>
 	   <td> <input/></td>
+	   <td>3</td>
+	   <td>5</td>
+	   <td> <input/></td>
+	   <td><input/></td>
+	   </tr>
+	   <tr> 
+	   <td>3</td>
+	   <td><input/></td>
+	   <td><input/></td>
+	   <td><input/></td>
+	   <td> <input/></td>
+	   <td><input/></td>
+	   <td><input/></td>
+	   <td> <input/></td>
+	   <td>4</td>
+	   </tr>
+	   <tr> 
+	   <td><input/></td>
+	   <td> <input/></td>
+	   <td> 6</td>
 	   <td>7</td>
 	   <td> <input/></td>
-	   <td>4</td>
-	   <td> <input/></td>
-	   <td> <input/></td>
-	   <td>6</td>
-	   </tr>
-	   <tr> 
-	   <td><input/></td>
-	   <td><input/></td>
-	   <td>4</td>
-	   <td><input/></td>
-	   <td> <input/></td>
-	   <td><input/></td>
+	   <td>9</td>
 	   <td>2</td>
 	   <td> <input/></td>
 	   <td><input/></td>
-	   </tr>
-	   <tr> 
-	   <td>8</td>
-	   <td> <input/></td>
-	   <td> <input/></td>
-	   <td>2</td>
-	   <td> <input/></td>
-	   <td>6</td>
-	   <td> <input/></td>
-	   <td> <input/></td>
-	   <td>5</td>
 	   	</tr>
 	  <tbody>
 	  	<tr>
-	   <td><input/></td> 
-	   <td>7 </td>
-	   <td> <input/></td>
+	   <td>9</td> 
 	   <td><input/></td>
 	   <td> <input/></td>
 	   <td><input/></td>
 	   <td> <input/></td>
-	   <td>4</td>
+	   <td><input/></td>
+	   <td> <input/></td>
+	   <td><input/></td>
+	   <td>2</td>
+	   </tr>
+	   <tr> 
+	   <td><input/></td>
+	   <td>8</td>
+	   <td><input/></td>
+	   <td>9</td>
+	   <td><input/></td>
+	   <td>1</td>
+	   <td><input/></td>
+	   <td> 6</td>
 	   <td><input/></td>
 	   </tr>
 	   <tr> 
+	   <td><input/></td>
+	   <td>1</td>
+	   <td> <input/></td>
+	   <td>4</td>
+	   <td>3</td>
 	   <td>6</td>
-	   <td><input/></td>
-	   <td>5</td>
-	   <td><input/></td>
-	   <td>4</td>
-	   <td><input/></td>
-	   <td>7</td>
-	   <td> <input/></td>
-	   <td>3</td>
-	   </tr>
-	   <tr> 
-	   <td><input/></td>
-	   <td> <input/></td>
-	   <td> <input/></td>
-	   <td>3</td>
 	   <td> <input/></td>
 	   <td>5</td>
-	   <td> <input/></td>
-	   <td> <input/></td>
 	   <td><input/></td>
 	   	</tr>
 	   </table>
 	</center>
 
-	<p class="bluelink">
-	<a href='index.html'>SUBMIT</a>
-	</p>
+	<div style="padding-top: 30px;">
+	<button type="button">SUBMIT</button>
+	</div>
 
 	</body>
 </html>
