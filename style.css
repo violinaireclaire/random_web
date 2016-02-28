@@ -7,12 +7,11 @@ body {text-align: center;
   background: #777;    
   border: 2px solid #000;
   box-shadow: 15px 15px 20px #111;
-
-  .sudoku-row {    
-    .sudoku-square {      
+}
+  .sudoku-row, .sudoku-square {      
       float: left;
       border: 1px solid #000;
-
+}
       .cell:nth-child(3n+1) {
         clear: both;
       }
@@ -24,7 +23,7 @@ body {text-align: center;
         background:#fff;        
         border: 1px solid #000;
         box-sizing: content-box;        
-
+}
         a {
           margin: 0;
           padding: 0;
@@ -40,6 +39,9 @@ body {text-align: center;
 
 p {line-height: 1.6em; 
   vertical-align: middle;}
+h1 {font-size: 10em;}
+p{font-size: 3em}
+a{font-size: 1.5em}
 
 p span { background-color: white; color: #008CBA;
       font-weight: bold; font-size: 1.3em;
